@@ -1,0 +1,13 @@
+<?php if(isset($_POST['w-message-input'])) echo $_POST['texto']; ?>
+<script>
+  function enviar(evento){
+    if(evento.keyCode==13) {
+      document.form1.submit();
+    }
+  }
+</script>
+<form action="" method="post" name="form1">
+<textarea name="texto" onkeyup="enviar(event);" required></textarea>
+<br>
+Pulsa enter para enviar..
+</form>
